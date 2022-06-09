@@ -3,7 +3,6 @@
     font-size: 0px;
 }
 section{
-    background-color: aqua;
     width: 1440px;
     height: 960px;
     margin: auto;
@@ -13,22 +12,18 @@ section{
 }
 .sectionPictureAndContent{ 
     display: flex;
-    background-color: blueviolet;
 }
 picture img{
     width: 505px;
     height: 330px;
 }
 .sectionContent-wrapper{
-    /* width: 475px; */
     text-align: right;
-    background-color: brown;
 }
 .sectionContent{
     width: 380px;
     height: 250px;
     text-align: left;
-    background-color: blanchedalmond;
     margin: 40px 0px 40px 95px;   
 }
 .sectionContent h2{
@@ -88,7 +83,7 @@ picture img{
 .popupContent{
     margin: 56px 445px 56px 95px; 
     height: 98px;
-    width: 380px;
+    width: 480px;
     left: 355px;
     top: 431px;
 }
@@ -100,8 +95,16 @@ h3{
     line-height: 50px;
     letter-spacing: 0px;
     text-align: left;
+    margin: 0;
 
 }
+
+.alertTextAndReset{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .popupContent p{
 font-family: Roboto;
 font-size: 16px;
@@ -111,8 +114,16 @@ letter-spacing: 0px;
 text-align: left;
 
 }
+.popupBoldText{
+font-family: Roboto;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: left;
+}
 
-.popup button{
+.popup .buttonX{
     position: absolute;
     font-size: 12px;
     height: 24px;
@@ -124,4 +135,20 @@ text-align: left;
     color: black;
     cursor: pointer;
 
+}
+
+.buttonReset{
+    background-color: #E4C1AE;
+    border-radius: 32px;
+    width: 128px;
+    height: 48px;
+    border: none;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: center;
+    display: none;
 }
