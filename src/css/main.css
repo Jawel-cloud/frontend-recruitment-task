@@ -8,7 +8,7 @@ section{
     margin: auto;
     padding: 96px 230px 534px 230px; 
     position: relative;
-    margin: 50px;
+    background-color: aqua;
 }
 .sectionPictureAndContent{ 
     display: flex;
@@ -16,15 +16,18 @@ section{
 picture img{
     width: 505px;
     height: 330px;
+    background-size: cover;
 }
 .sectionContent-wrapper{
     text-align: right;
+    background-color: #E4C1AE;
 }
 .sectionContent{
     width: 380px;
     height: 250px;
     text-align: left;
     margin: 40px 0px 40px 95px;   
+    background-color: blue;
 }
 .sectionContent h2{
     font-family: Roboto;
@@ -60,7 +63,6 @@ picture img{
 }
 .popupWrapper{
     background-color: rgba(18, 18, 18, 0.5);
-    /* opacity: 0.5; */
     width: 100%;
     height: 100%;
     position: absolute;
@@ -73,19 +75,14 @@ picture img{
     position: absolute;
     background-color: white;
     height: 210px;
-    /* opacity: 1 !important; */
-    height: 210px;
     width: 920px;
     left: 260px;
     top: 375px;
-    /* padding: 56px 445px 56px 95px;  */
 }
 .popupContent{
     margin: 56px 445px 56px 95px; 
     height: 98px;
     width: 480px;
-    left: 355px;
-    top: 431px;
 }
 
 h3{
@@ -151,4 +148,176 @@ text-align: left;
     letter-spacing: 0px;
     text-align: center;
     display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1400px) {
+    section{
+        width: 90vw;
+        height: 90vh;
+        padding: 8vh 10vw 50vh 10vw; 
+    }
+
+    picture img{
+        width: 36vw;
+        height: 40vh;
+    }
+
+    .sectionContent{
+        width: 28vw;
+        height: 34vh;
+        margin: 2vh 0vw 2vh 7vw;   
+    }
+    .sectionContent h2{
+        font-size: 32px;
+        line-height: 32px;
+    
+    }
+    .sectionContent p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .sectionContent button{
+        border-radius: 3vw;
+        width: 10vw;
+        height: 7vh;
+        font-size: 16px;
+        line-height: 16px;
+    
+    }
+
+    .popup{
+        height: 20vh;
+        width: 60vw;
+        left: 15vw;
+        top: 35vh;
+    }
+    .popupContent{
+        margin: 2vh 15vw 2vh 5vw; 
+        height: 16vh;
+        width: 40vw;
+    }
+    
+    h3{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .popupContent p{
+    font-size: 12px;
+    line-height: 18px;
+    
+    }
+    .popupBoldText{
+    font-size: 12px;
+    line-height: 18px;
+    }
+    
+    .popup .buttonX{
+        font-size: 12px;
+        height: 24px;
+        width: 24px;
+        left: 55vw;
+        top: 2vh;
+    }
+    
+    .buttonReset{
+        border-radius: 3vw;
+        width: 10vw;
+        height: 7vh;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+    section{
+        width: 90vw;
+        height: 90vh;
+        padding: 8vh 10vw 50vh 10vw; 
+    }
+
+    picture img{
+        width: 36vw;
+        height: 40vh;
+    }
+
+    .sectionContent{
+        width: 28vw;
+        height: 34vh;
+        margin: 2vh 0vw 2vh 7vw;   
+    }
+    .sectionContent h2{
+        font-size: 32px;
+        line-height: 32px;
+    
+    }
+    .sectionContent p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .sectionContent button{
+        border-radius: 3vw;
+        width: 10vw;
+        height: 7vh;
+        font-size: 16px;
+        line-height: 16px;
+    
+    }
+
+    .popup{
+        height: 20vh;
+        width: 60vw;
+        left: 15vw;
+        top: 35vh;
+    }
+    .popupContent{
+        margin: 2vh 15vw 2vh 5vw; 
+        height: 16vh;
+        width: 40vw;
+    }
+    
+    h3{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .popupContent p{
+    font-size: 12px;
+    line-height: 18px;
+    
+    }
+    .popupBoldText{
+    font-size: 12px;
+    line-height: 18px;
+    }
+    
+    .popup .buttonX{
+        font-size: 12px;
+        height: 24px;
+        width: 24px;
+        left: 55vw;
+        top: 2vh;
+    }
+    
+    .buttonReset{
+        border-radius: 3vw;
+        width: 10vw;
+        height: 7vh;
+        font-size: 16px;
+        line-height: 16px;
+    }
 }
