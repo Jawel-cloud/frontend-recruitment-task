@@ -277,74 +277,153 @@ text-align: left;
         padding: 8vh 10vw 50vh 10vw; 
     }
 
-    /* picture img{
-        width: 36vw;
-        height: 40vh;
-    } */
-
     .sectionContent{
         width: 32vw;
         height: 34vh;
         margin: 2vh 0vw 2vh 3vw;   
     }
-    /* .sectionContent h2{
-        font-size: 32px;
-        line-height: 32px;
+    .sectionContent h2{
+        font-size: 26px;
+        line-height: 26px;
     
     }
     .sectionContent p{
-        font-size: 12px;
-        line-height: 18px;
-    } */
-    /* .sectionContent button{
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .sectionContent button{
         border-radius: 3vw;
-        width: 10vw;
+        width: 14vw;
         height: 7vh;
         font-size: 16px;
         line-height: 16px;
-    
-    } */
-
+    }
     .popup{
         height: 20vh;
         width: 60vw;
         left: 15vw;
         top: 20vh;
     }
-    /* .popupContent{
+    .buttonReset{
+        width: 14vw;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .sectionContent h2{
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+
+
+
+@media (max-width: 400px) {
+    section{
+        width: 90vw;
+        height: 90vh;
+        padding: 8vh 10vw 50vh 8vw; 
+    }
+
+    .sectionPictureAndContent{ 
+        flex-direction: column;
+    }
+
+    picture img{
+        width: 73vw;
+        height: 30vh;
+    }
+
+    .sectionContent{
+        width: 70vw;
+        height: 36vh;
+        margin: 2vh 0vw 2vh 3vw;   
+        text-align: center;
+    }
+    .sectionContent h2{
+        font-size: 30px;
+        line-height: 30px;
+    
+    }
+    .sectionContent p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .sectionContent button{
+        border-radius: 3vw;
+        width: 20vw;
+        height: 7vh;
+        font-size: 16px;
+        line-height: 16px;
+    
+    }
+
+    .popup{
+        height: 20vh;
+        width: 80vw;
+        left: 5vw;
+        top: 20vh;
+    }
+    .popupContent{
         margin: 2vh 15vw 2vh 5vw; 
         height: 16vh;
-        width: 40vw;
-    }
-    
-    h3{
-        font-size: 32px;
-        line-height: 40px;
-    }
-    
-    .popupContent p{
-    font-size: 12px;
-    line-height: 18px;
-    
-    }
-    .popupBoldText{
-    font-size: 12px;
-    line-height: 18px;
+        width: 60vw;
     }
     
     .popup .buttonX{
         font-size: 12px;
         height: 24px;
         width: 24px;
-        left: 55vw;
+        left: 70vw;
         top: 2vh;
     }
     
     .buttonReset{
         border-radius: 3vw;
-        width: 10vw;
-        height: 7vh;
-        font-size: 16px;
-        line-height: 16px;
-    } */
+        width: 30vw;
+    } 
+}
+
+
+
+
+
+
+
+@media (max-width: 300px) {
+    .sectionContent h2{
+        font-size: 20px;
+        line-height: 20px;
+    
+    }
+    .sectionContent p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .sectionContent button{
+        width: 40vw;
+    
+    }
+
+    .popup{
+        height: 40vh;
+        width: 80vw;
+        left: 5vw;
+        top: 20vh;
+    }
+    .alertTextAndReset{
+        flex-direction: column;
+    }
+    
+    .popup .buttonX{
+        left: 60vw;
+    }
+
+    .buttonReset{
+        border-radius: 3vw;
+        width: 50vw;
+    } 
+ 
 }
