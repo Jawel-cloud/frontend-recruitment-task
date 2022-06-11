@@ -15,20 +15,14 @@ button.addEventListener('click',()=>{
     if(!popupActive){
     popupWrapper.style.display = 'block'
     counter++;
-    console.log('counter: '+counter)
-    console.log('popup: '+popupActive)
     popupBoldText.textContent = counter+ ' times';
     popupActive=true;}})
 
 
     popupWrapper.addEventListener('click', function(e){
-    console.log('popup: '+popupActive)
     if(popupActive){
 	if (popup.contains(e.target)){
-  	console.log("in Popup");
   } else{
-  	console.log("outside Popup");
-    console.log('counter: '+counter);
     popupWrapper.style.display = 'none'
     popupActive = false;
   }}})

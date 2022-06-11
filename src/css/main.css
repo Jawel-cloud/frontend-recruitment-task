@@ -8,7 +8,6 @@ section{
     margin: auto;
     padding: 96px 230px 534px 230px; 
     position: relative;
-    background-color: aqua;
 }
 .sectionPictureAndContent{ 
     display: flex;
@@ -20,14 +19,12 @@ picture img{
 }
 .sectionContent-wrapper{
     text-align: right;
-    background-color: #E4C1AE;
 }
 .sectionContent{
     width: 380px;
     height: 250px;
     text-align: left;
     margin: 40px 0px 40px 95px;   
-    background-color: blue;
 }
 .sectionContent h2{
     font-family: Roboto;
@@ -150,15 +147,6 @@ text-align: left;
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
 @media (max-width: 1400px) {
     section{
         width: 90vw;
@@ -238,54 +226,27 @@ text-align: left;
     }
 }
 
-
-
-
-
-
 @media (max-width: 900px) {
     section{
-        width: 90vw;
         height: 50vw;
-        padding: 8vh 10vw 50vh 10vw; 
     }
-
     .sectionContent{
         width: 32vw;
         height: 34vh;
         margin: 2vh 0vw 2vh 3vw;   
     }
-
     .popup{
-        height: 20vh;
-        width: 60vw;
-        left: 15vw;
         top: 20vh;
     }
 }
 
-
-
-
-
-
-
 @media (max-width: 700px) {
     section{
-        width: 90vw;
         height: 60vw;
-        padding: 8vh 10vw 50vh 10vw; 
-    }
-
-    .sectionContent{
-        width: 32vw;
-        height: 34vh;
-        margin: 2vh 0vw 2vh 3vw;   
     }
     .sectionContent h2{
         font-size: 26px;
         line-height: 26px;
-    
     }
     .sectionContent p{
         font-size: 10px;
@@ -294,19 +255,9 @@ text-align: left;
     .sectionContent button{
         border-radius: 3vw;
         width: 14vw;
-        height: 7vh;
-        font-size: 16px;
-        line-height: 16px;
-    }
-    .popup{
-        height: 20vh;
-        width: 60vw;
-        left: 15vw;
-        top: 20vh;
     }
     .buttonReset{
         width: 14vw;
-
     }
 }
 
@@ -317,25 +268,19 @@ text-align: left;
     }
 }
 
-
-
-
 @media (max-width: 400px) {
     section{
         width: 90vw;
         height: 90vh;
         padding: 8vh 10vw 50vh 8vw; 
     }
-
     .sectionPictureAndContent{ 
         flex-direction: column;
     }
-
     picture img{
         width: 73vw;
         height: 30vh;
     }
-
     .sectionContent{
         width: 70vw;
         height: 36vh;
@@ -345,58 +290,34 @@ text-align: left;
     .sectionContent h2{
         font-size: 30px;
         line-height: 30px;
-    
     }
     .sectionContent p{
         font-size: 16px;
         line-height: 20px;
     }
     .sectionContent button{
-        border-radius: 3vw;
         width: 20vw;
-        height: 7vh;
-        font-size: 16px;
-        line-height: 16px;
-    
     }
-
     .popup{
-        height: 20vh;
         width: 80vw;
         left: 5vw;
-        top: 20vh;
     }
     .popupContent{
-        margin: 2vh 15vw 2vh 5vw; 
-        height: 16vh;
         width: 60vw;
     }
     
     .popup .buttonX{
-        font-size: 12px;
-        height: 24px;
-        width: 24px;
         left: 70vw;
-        top: 2vh;
     }
-    
     .buttonReset{
-        border-radius: 3vw;
         width: 30vw;
     } 
 }
-
-
-
-
-
-
 
 @media (max-width: 300px) {
     .sectionContent h2{
         font-size: 20px;
         line-height: 20px;
-    
     }
     .sectionContent p{
         font-size: 10px;
@@ -404,26 +325,19 @@ text-align: left;
     }
     .sectionContent button{
         width: 40vw;
-    
     }
-
     .popup{
         height: 40vh;
         width: 80vw;
         left: 5vw;
-        top: 20vh;
     }
     .alertTextAndReset{
         flex-direction: column;
-    }
-    
+    }    
     .popup .buttonX{
         left: 60vw;
     }
-
     .buttonReset{
-        border-radius: 3vw;
         width: 50vw;
     } 
- 
 }
