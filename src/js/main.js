@@ -5,7 +5,8 @@ const popupBoldText = document.querySelector('.popupBoldText');
 const buttonX = document.querySelector('.buttonX');
 const buttonReset = document.querySelector('.buttonReset');
 
-let counter = 0;
+let counterInStorage = localStorage.getItem("counterInStorage") !== null ? JSON.parse(localStorage.getItem('counterInStorage')) : 0; 
+let counter = parseInt(counterInStorage);
 let popupActive =false;
 
 button.addEventListener('click',()=>{
@@ -14,6 +15,8 @@ button.addEventListener('click',()=>{
   }
     if(!popupActive){
     popupWrapper.style.display = 'block'
+    window.localStorage.clear();
+    window.localStorage.setItem('counterInStorage', JSON.stringify(counter+1));
     counter++;
     popupBoldText.textContent = counter+ ' times';
     popupActive=true;}})
@@ -33,6 +36,7 @@ button.addEventListener('click',()=>{
   })
 
   buttonReset.addEventListener('click',()=>{
+    window.localStorage.clear();
     counter=0;
     popupBoldText.textContent = counter+ ' times';
     buttonReset.style.display = 'none';

@@ -66,8 +66,6 @@ section {
         }
     }
 
-
-
     .popupWrapper {
         background-color: rgba(18, 18, 18, 0.5);
         width: 100%;
@@ -77,7 +75,6 @@ section {
         left: 0;
         display: none;
 
-
         .popup {
             position: absolute;
             background-color: white;
@@ -86,12 +83,10 @@ section {
             left: 260px;
             top: 375px;
 
-
             .popupContent {
                 margin: 56px 445px 56px 95px;
                 height: 98px;
                 width: 480px;
-
 
                 h3 {
                     font-family: Roboto;
@@ -108,8 +103,6 @@ section {
                     display: flex;
                     justify-content: space-between;
 
-
-
                     p {
                         font-family: Roboto;
                         font-size: 16px;
@@ -117,7 +110,6 @@ section {
                         line-height: 24px;
                         letter-spacing: 0px;
                         text-align: left;
-
 
                         .popupBoldText {
                             font-family: Roboto;
@@ -158,7 +150,6 @@ section {
                 background: #FFFFFF;
                 color: black;
                 cursor: pointer;
-
             }
         }
     }
@@ -178,17 +169,14 @@ section {
             }
 
             .sectionContent-wrapper {
-
                 .sectionContent {
                     width: 28vw;
                     height: 34vh;
                     margin: 2vh 0vw 2vh 7vw;
 
-
                     h2 {
                         font-size: 32px;
                         line-height: 32px;
-
                     }
 
                     p {
@@ -202,20 +190,17 @@ section {
                         height: 7vh;
                         font-size: 16px;
                         line-height: 16px;
-
                     }
                 }
             }
         }
 
         .popupWrapper {
-
             .popup {
                 height: 20vh;
                 width: 60vw;
                 left: 15vw;
                 top: 35vh;
-
 
                 .popupContent {
                     margin: 2vh 15vw 2vh 5vw;
@@ -228,7 +213,6 @@ section {
                     }
 
                     .alertTextAndReset {
-
                         p {
                             font-size: 12px;
                             line-height: 18px;
@@ -267,7 +251,6 @@ section {
 
         .sectionPictureAndContent {
             .sectionContent-wrapper {
-
                 .sectionContent {
                     width: 32vw;
                     height: 34vh;
@@ -347,20 +330,17 @@ section {
         .sectionPictureAndContent {
             flex-direction: column;
 
-
             picture img {
                 width: 73vw;
                 height: 30vh;
             }
 
             .sectionContent-wrapper {
-
                 .sectionContent {
                     width: 70vw;
                     height: 36vh;
                     margin: 2vh 0vw 2vh 3vw;
                     text-align: center;
-
 
                     h2 {
                         font-size: 30px;
