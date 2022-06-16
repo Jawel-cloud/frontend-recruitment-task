@@ -33,7 +33,7 @@ const fetchFunction = () => {
         tr.innerHTML = `<td>${data[i].name} </td><td>${data[i].email} </td><td class="nomobile">${data[i].address.city}, ${data[i].address.street}, ${data[i].address.suite}</td><td class="nomobile">${data[i].phone}</td><td class="nomobile">${data[i].company.name}</td>`
         tbody.appendChild(tr)
       }
-      thead.innerHTML = '<tr><th>Name </th><th>Email </th><th>Address</th><th>Phone</th><th>Company</th></tr>';
+      thead.innerHTML = '<tr><th>Name </th><th>Email </th><th class="nomobile">Address</th><th class="nomobile">Phone</th><th class="nomobile">Company</th></tr>';
     })
 }
 
