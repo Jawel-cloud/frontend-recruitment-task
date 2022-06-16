@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+section {
+    width: 1440px;
+    height: 960px;
+    margin: auto;
+    padding: 96px 230px 534px 230px;
+    position: relative;
+
+    .sectionPictureAndContent {
+        display: flex;
+
+        picture img {
+            width: 505px;
+            height: 330px;
+            background-size: cover;
+        }
+
+        .sectionContent-wrapper {
+            text-align: right;
+
+            .sectionContent {
+                width: 380px;
+                height: 250px;
+                text-align: left;
+                margin: 40px 0px 40px 95px;
+
+                h2 {
+                    font-family: Roboto;
+                    font-size: 42px;
+                    font-weight: 700;
+                    line-height: 50px;
+                    letter-spacing: 0px;
+                    text-align: left;
+
+                }
+
+                p {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                }
+
+                button {
+                    background-color: #E4C1AE;
+                    border-radius: 32px;
+                    width: 128px;
+                    height: 48px;
+                    border: none;
+                    color: white;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 16px;
+                    letter-spacing: 0px;
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+
+    .popupWrapper {
+        background-color: rgba(18, 18, 18, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+
+        .popup {
+            position: absolute;
+            background-color: white;
+            height: 210px;
+            width: 920px;
+            left: 260px;
+            top: 375px;
+
+            .popupContent {
+                margin: 56px 445px 56px 95px;
+                height: 98px;
+                width: 480px;
+
+                h3 {
+                    font-family: Roboto;
+                    font-size: 42px;
+                    font-weight: 700;
+                    line-height: 50px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    margin: 0;
+
+                }
+
+                .alertTextAndReset {
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 24px;
+                        letter-spacing: 0px;
+                        text-align: left;
+
+                        .popupBoldText {
+                            font-family: Roboto;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 24px;
+                            letter-spacing: 0px;
+                            text-align: left;
+                        }
+                    }
+
+                    .buttonReset {
+                        background-color: #E4C1AE;
+                        border-radius: 32px;
+                        width: 128px;
+                        height: 48px;
+                        border: none;
+                        color: white;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 16px;
+                        letter-spacing: 0px;
+                        text-align: center;
+                        display: none;
+                    }
+                }
+            }
+
+            .buttonX {
+                position: absolute;
+                font-size: 12px;
+                height: 24px;
+                width: 24px;
+                left: 856px;
+                top: 30px;
+                border: none;
+                background: #FFFFFF;
+                color: black;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    section {
+        width: 90vw;
+        height: 90vh;
+        padding: 8vh 10vw 50vh 10vw;
+
+        .sectionPictureAndContent {
+
+            picture img {
+                width: 36vw;
+                height: 40vh;
+            }
+
+            .sectionContent-wrapper {
+                .sectionContent {
+                    width: 28vw;
+                    height: 34vh;
+                    margin: 2vh 0vw 2vh 7vw;
+
+                    h2 {
+                        font-size: 32px;
+                        line-height: 32px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+
+                    button {
+                        border-radius: 3vw;
+                        width: 10vw;
+                        height: 7vh;
+                        font-size: 16px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+
+        .popupWrapper {
+            .popup {
+                height: 20vh;
+                width: 60vw;
+                left: 15vw;
+                top: 35vh;
+
+                .popupContent {
+                    margin: 2vh 15vw 2vh 5vw;
+                    height: 16vh;
+                    width: 40vw;
+
+                    h3 {
+                        font-size: 32px;
+                        line-height: 40px;
+                    }
+
+                    .alertTextAndReset {
+                        p {
+                            font-size: 12px;
+                            line-height: 18px;
+
+                            .popupBoldText {
+                                font-size: 12px;
+                                line-height: 18px;
+                            }
+                        }
+
+                        .buttonReset {
+                            border-radius: 3vw;
+                            width: 10vw;
+                            height: 7vh;
+                            font-size: 16px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+
+                .buttonX {
+                    font-size: 12px;
+                    height: 24px;
+                    width: 24px;
+                    left: 55vw;
+                    top: 2vh;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    section {
+        height: 50vw;
+
+        .sectionPictureAndContent {
+            .sectionContent-wrapper {
+                .sectionContent {
+                    width: 32vw;
+                    height: 34vh;
+                    margin: 2vh 0vw 2vh 3vw;
+                }
+            }
+        }
+
+        .popupWrapper {
+            .popup {
+                top: 20vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    section {
+        height: 60vw;
+
+        .sectionPictureAndContent {
+            .sectionContent-wrapper {
+                .sectionContent {
+                    h2 {
+                        font-size: 26px;
+                        line-height: 26px;
+                    }
+
+                    p {
+                        font-size: 10px;
+                        line-height: 16px;
+                    }
+
+                    button {
+                        border-radius: 3vw;
+                        width: 14vw;
+                    }
+                }
+            }
+        }
+
+        .popupWrapper {
+            .popup {
+                .popupContent {
+                    .alertTextAndReset {
+                        .buttonReset {
+                            width: 14vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        .sectionPictureAndContent {
+            .sectionContent-wrapper {
+                .sectionContent {
+                    h2 {
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    section {
+        width: 90vw;
+        height: 90vh;
+        padding: 8vh 10vw 50vh 8vw;
+
+        .sectionPictureAndContent {
+            flex-direction: column;
+
+            picture img {
+                width: 73vw;
+                height: 30vh;
+            }
+
+            .sectionContent-wrapper {
+                .sectionContent {
+                    width: 70vw;
+                    height: 36vh;
+                    margin: 2vh 0vw 2vh 3vw;
+                    text-align: center;
+
+                    h2 {
+                        font-size: 30px;
+                        line-height: 30px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    button {
+                        width: 20vw;
+                    }
+                }
+            }
+        }
+
+        .popupWrapper {
+            .popup {
+                width: 80vw;
+                left: 5vw;
+
+                .popupContent {
+                    width: 60vw;
+
+                    .alertTextAndReset {
+                        .buttonReset {
+                            width: 30vw;
+                        }
+                    }
+                }
+
+                .buttonX {
+                    left: 70vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    section {
+        .sectionPictureAndContent {
+            .sectionContent-wrapper {
+                .sectionContent {
+
+                    h2 {
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+
+                    p {
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
+
+                    button {
+                        width: 40vw;
+                    }
+                }
+            }
+        }
+
+        .popupWrapper {
+            .popup {
+                height: 40vh;
+                width: 80vw;
+                left: 5vw;
+
+                .popupContent {
+                    .alertTextAndReset {
+                        flex-direction: column;
+
+                        .buttonReset {
+                            width: 50vw;
+                        }
+                    }
+                }
+
+                .buttonX {
+                    left: 60vw;
+                }
+            }
+        }
+    }
+}
