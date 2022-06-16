@@ -158,24 +158,61 @@ section .popupWrapper .popup .buttonX {
   cursor: pointer;
 }
 
-section .popupWrapper .popup .center {
+section .popupWrapper .popup .loader {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5vh;
+  width: 100px;
+  height: 100px;
+  border: 16px solid #f3e5de;
+  border-top: 16px solid #E4C1AE;
+  border-radius: 50%;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
-section .popupWrapper .popup th,
-section .popupWrapper .popup td {
-  font-size: 10px;
-  border: 1px solid;
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
-section .popupWrapper .popup thead {
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+section .popupWrapper .popup .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section .popupWrapper .popup .table {
+  display: none;
+  margin-bottom: 5vh;
+}
+
+section .popupWrapper .popup .table thead {
   background-color: #E4C1AE;
 }
 
-section .popupWrapper .popup tbody {
+section .popupWrapper .popup .table tbody {
   background-color: #f3e5de;
+}
+
+section .popupWrapper .popup .table th,
+section .popupWrapper .popup .table td {
+  font-size: 10px;
+  border: 1px solid;
 }
 
 @media (max-width: 1400px) {
@@ -371,7 +408,7 @@ section .popupWrapper .popup tbody {
   section .popupWrapper .popup .buttonX {
     left: 60vw;
   }
-  section .popupWrapper .popup .center {
+  section .popupWrapper .popup .table {
     margin-top: 10vh;
   }
 }
