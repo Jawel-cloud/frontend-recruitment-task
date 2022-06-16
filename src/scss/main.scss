@@ -78,10 +78,10 @@ section {
         .popup {
             position: absolute;
             background-color: white;
-            height: 210px;
+            // height: 210px;
             width: 920px;
             left: 260px;
-            top: 375px;
+            top: 225px;
 
             .popupContent {
                 margin: 56px 445px 56px 95px;
@@ -152,18 +152,9 @@ section {
                 cursor: pointer;
             }
 
-            table,
-            thead,
-            tbody,
-            tfoot,
-            tr,
             th,
             td {
                 font-size: 10px;
-            }
-
-            th,
-            td {
                 border: 1px solid;
             }
 
@@ -220,10 +211,10 @@ section {
 
         .popupWrapper {
             .popup {
-                height: 20vh;
+                // height: 20vh;
                 width: 60vw;
                 left: 15vw;
-                top: 35vh;
+                top: 20vh;
 
                 .popupContent {
                     margin: 2vh 15vw 2vh 5vw;
@@ -270,7 +261,7 @@ section {
 
 @media (max-width: 900px) {
     section {
-        height: 50vw;
+        height: 95vh;
 
         .sectionPictureAndContent {
             .sectionContent-wrapper {
@@ -284,7 +275,7 @@ section {
 
         .popupWrapper {
             .popup {
-                top: 20vh;
+                top: 5vh;
             }
         }
     }
@@ -292,7 +283,7 @@ section {
 
 @media (max-width: 700px) {
     section {
-        height: 60vw;
+        height: 100vh;
 
         .sectionPictureAndContent {
             .sectionContent-wrapper {
@@ -317,6 +308,9 @@ section {
 
         .popupWrapper {
             .popup {
+                width: 80vw;
+                left: 3vw;
+
                 .popupContent {
                     .alertTextAndReset {
                         .buttonReset {

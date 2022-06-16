@@ -81,10 +81,9 @@ section .popupWrapper {
 section .popupWrapper .popup {
   position: absolute;
   background-color: white;
-  height: 210px;
   width: 920px;
   left: 260px;
-  top: 375px;
+  top: 225px;
 }
 
 section .popupWrapper .popup .popupContent {
@@ -159,18 +158,9 @@ section .popupWrapper .popup .buttonX {
   cursor: pointer;
 }
 
-section .popupWrapper .popup table,
-section .popupWrapper .popup thead,
-section .popupWrapper .popup tbody,
-section .popupWrapper .popup tfoot,
-section .popupWrapper .popup tr,
 section .popupWrapper .popup th,
 section .popupWrapper .popup td {
   font-size: 10px;
-}
-
-section .popupWrapper .popup th,
-section .popupWrapper .popup td {
   border: 1px solid;
 }
 
@@ -213,10 +203,9 @@ section .popupWrapper .popup tbody {
     line-height: 16px;
   }
   section .popupWrapper .popup {
-    height: 20vh;
     width: 60vw;
     left: 15vw;
-    top: 35vh;
+    top: 20vh;
   }
   section .popupWrapper .popup .popupContent {
     margin: 2vh 15vw 2vh 5vw;
@@ -253,7 +242,7 @@ section .popupWrapper .popup tbody {
 
 @media (max-width: 900px) {
   section {
-    height: 50vw;
+    height: 95vh;
   }
   section .sectionPictureAndContent .sectionContent-wrapper .sectionContent {
     width: 32vw;
@@ -261,13 +250,13 @@ section .popupWrapper .popup tbody {
     margin: 2vh 0vw 2vh 3vw;
   }
   section .popupWrapper .popup {
-    top: 20vh;
+    top: 5vh;
   }
 }
 
 @media (max-width: 700px) {
   section {
-    height: 60vw;
+    height: 100vh;
   }
   section .sectionPictureAndContent .sectionContent-wrapper .sectionContent h2 {
     font-size: 26px;
@@ -280,6 +269,10 @@ section .popupWrapper .popup tbody {
   section .sectionPictureAndContent .sectionContent-wrapper .sectionContent button {
     border-radius: 3vw;
     width: 14vw;
+  }
+  section .popupWrapper .popup {
+    width: 80vw;
+    left: 3vw;
   }
   section .popupWrapper .popup .popupContent .alertTextAndReset .buttonReset {
     width: 14vw;
