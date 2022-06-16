@@ -10,9 +10,11 @@ let counter = parseInt(counterInStorage);
 let popupActive = false;
 
 const table = document.querySelector('table')
+const thead = document.querySelector('thead');
 const tbody = document.querySelector('tbody');
 const loader = document.querySelector('.loader')
 let timer;
+
 
 const showTable = () => {
   loader.style.display = "none";
@@ -20,19 +22,31 @@ const showTable = () => {
 }
 
 const loading = () => {
-  setTimeout(showTable, 1500);
+  setTimeout(showTable, 1000);
 }
 const fetchFunction = () => {
   fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
-    .then(data => Array.from(data))
     .then(data => {
-      console.log(data.length)
       for (let i = 0; i < data.length; i++) {
         const tr = document.createElement('tr')
         tr.innerHTML = `<td>${data[i].name} </td><td>${data[i].email} </td><td class="nomobile">${data[i].address.city}, ${data[i].address.street}, ${data[i].address.suite}</td><td class="nomobile">${data[i].phone}</td><td class="nomobile">${data[i].company.name}</td>`
         tbody.appendChild(tr)
       }
+      thead.innerHTML = '<tr><th>Name </th><th>Email </th><th>Address</th><th>Phone</th><th>Company</th></tr>';
+    })
+}
+
+const fetchFunctionMobile = () => {
+  fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(data => {
+      for (let i = 0; i < data.length; i++) {
+        const tr = document.createElement('tr')
+        tr.innerHTML = `<td>${data[i].name}, ${data[i].email}, ${data[i].address.city}, ${data[i].address.street}, ${data[i].address.suite}, ${data[i].phone}, ${data[i].company.name}</td>`
+        tbody.appendChild(tr)
+      }
+      thead.innerHTML = '<tr><th>Name, Email, Address, Phone, Company</th></tr>'
     })
 }
 
@@ -50,7 +64,8 @@ button.addEventListener('click', () => {
   }
   tbody.innerHTML = '';
   loading();
-  fetchFunction();
+  window.innerWidth >= 500 ? fetchFunction() : fetchFunctionMobile();
+  console.log(window.innerWidth);
 })
 
 const closePopup = () => {
