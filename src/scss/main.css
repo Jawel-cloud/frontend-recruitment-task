@@ -191,26 +191,23 @@ section .popupWrapper .popup .loader {
   }
 }
 
-section .popupWrapper .popup .center {
+section .popupWrapper .popup table {
+  display: none;
+  margin-bottom: 5vh;
   margin-left: auto;
   margin-right: auto;
 }
 
-section .popupWrapper .popup .table {
-  display: none;
-  margin-bottom: 5vh;
-}
-
-section .popupWrapper .popup .table thead {
+section .popupWrapper .popup table thead {
   background-color: #E4C1AE;
 }
 
-section .popupWrapper .popup .table tbody {
+section .popupWrapper .popup table tbody {
   background-color: #f3e5de;
 }
 
-section .popupWrapper .popup .table th,
-section .popupWrapper .popup .table td {
+section .popupWrapper .popup table th,
+section .popupWrapper .popup table td {
   font-size: 10px;
   border: 1px solid;
 }
@@ -407,6 +404,9 @@ section .popupWrapper .popup .table td {
   }
   section .popupWrapper .popup .buttonX {
     left: 60vw;
+  }
+  section .popupWrapper .popup .loader {
+    margin-top: 10vh;
   }
   section .popupWrapper .popup .table {
     margin-top: 10vh;

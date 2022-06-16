@@ -185,14 +185,11 @@ section {
                 }
             }
 
-            .center {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .table {
+            table {
                 display: none;
                 margin-bottom: 5vh;
+                margin-left: auto;
+                margin-right: auto;
 
                 thead {
                     background-color: #E4C1AE;
@@ -492,9 +489,14 @@ section {
                     left: 60vw;
                 }
 
+                .loader {
+                    margin-top: 10vh;
+                }
+
                 .table {
                     margin-top: 10vh;
                 }
+
             }
         }
     }

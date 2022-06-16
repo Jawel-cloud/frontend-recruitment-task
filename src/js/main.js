@@ -9,14 +9,14 @@ let counterInStorage = localStorage.getItem("counterInStorage") !== null ? JSON.
 let counter = parseInt(counterInStorage);
 let popupActive = false;
 
-const table = document.querySelector('.table')
+const table = document.querySelector('table')
 const tbody = document.querySelector('tbody');
 const loader = document.querySelector('.loader')
 let timer;
 
 const showTable = () => {
   loader.style.display = "none";
-  table.style.display = "block";
+  table.style.display = "table";
 }
 
 const loading = () => {
@@ -53,21 +53,23 @@ button.addEventListener('click', () => {
   fetchFunction();
 })
 
+const closePopup = () => {
+  popupWrapper.style.display = 'none'
+  loader.style.display = "block";
+  table.style.display = "none";
+  popupActive = false;
+}
 
 popupWrapper.addEventListener('click', function (e) {
   if (popupActive) {
     if (popup.contains(e.target)) {} else {
-      popupWrapper.style.display = 'none'
-      loader.style.display = "block";
-      table.style.display = "none";
-      popupActive = false;
+      closePopup();
     }
   }
 })
 
 buttonX.addEventListener('click', function (e) {
-  popupWrapper.style.display = 'none'
-  popupActive = false;
+  closePopup();
 })
 
 buttonReset.addEventListener('click', () => {
