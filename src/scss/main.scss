@@ -152,6 +152,12 @@ section {
                 cursor: pointer;
             }
 
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 5vh;
+            }
+
             th,
             td {
                 font-size: 10px;
@@ -335,6 +341,14 @@ section {
                 }
             }
         }
+
+        .popupWrapper {
+            .popup {
+                .nomobile {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
@@ -424,7 +438,6 @@ section {
 
         .popupWrapper {
             .popup {
-                height: 40vh;
                 width: 80vw;
                 left: 5vw;
 
@@ -440,6 +453,10 @@ section {
 
                 .buttonX {
                     left: 60vw;
+                }
+
+                .center {
+                    margin-top: 10vh;
                 }
             }
         }

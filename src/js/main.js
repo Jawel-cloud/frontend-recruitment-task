@@ -56,7 +56,7 @@ const fetchFunction = () => {
       console.log(data.length)
       for (let i = 0; i < data.length; i++) {
         const tr = document.createElement('tr')
-        tr.innerHTML = `<td>${data[i].name} </td><td>${data[i].email} </td><td>${data[i].address.city}, ${data[i].address.street}, ${data[i].address.suite}</td><td>${data[i].phone}</td><td>${data[i].company.name}</td>`
+        tr.innerHTML = `<td>${data[i].name} </td><td>${data[i].email} </td><td class="nomobile">${data[i].address.city}, ${data[i].address.street}, ${data[i].address.suite}</td><td class="nomobile">${data[i].phone}</td><td class="nomobile">${data[i].company.name}</td>`
         tbody.appendChild(tr)
       }
     })
