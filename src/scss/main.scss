@@ -151,6 +151,29 @@ section {
                 color: black;
                 cursor: pointer;
             }
+
+            table,
+            thead,
+            tbody,
+            tfoot,
+            tr,
+            th,
+            td {
+                font-size: 10px;
+            }
+
+            th,
+            td {
+                border: 1px solid;
+            }
+
+            thead {
+                background-color: #E4C1AE;
+            }
+
+            tbody {
+                background-color: #f3e5de;
+            }
         }
     }
 }

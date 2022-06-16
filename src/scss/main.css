@@ -159,6 +159,29 @@ section .popupWrapper .popup .buttonX {
   cursor: pointer;
 }
 
+section .popupWrapper .popup table,
+section .popupWrapper .popup thead,
+section .popupWrapper .popup tbody,
+section .popupWrapper .popup tfoot,
+section .popupWrapper .popup tr,
+section .popupWrapper .popup th,
+section .popupWrapper .popup td {
+  font-size: 10px;
+}
+
+section .popupWrapper .popup th,
+section .popupWrapper .popup td {
+  border: 1px solid;
+}
+
+section .popupWrapper .popup thead {
+  background-color: #E4C1AE;
+}
+
+section .popupWrapper .popup tbody {
+  background-color: #f3e5de;
+}
+
 @media (max-width: 1400px) {
   section {
     width: 90vw;
